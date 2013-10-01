@@ -2,100 +2,100 @@
 
 
 - title: Coherence
-    viewed: 2013-09-19
-    country: USA
+  viewed: 2013-09-19
+  country: USA
 
 - title: Northwest
-    viewed: 2013-09-19
-    country: Denmark
+  viewed: 2013-09-19
+  country: Denmark
 
 - title: Almost Human
-    viewed: 2013-09-19
-    country: USA
+  viewed: 2013-09-19
+  country: USA
 
 - title: Escape From Tomorrow
-    viewed: 2013-09-20
-    country: USA
+  viewed: 2013-09-20
+  country: USA
 
 - title: A Field In England
-    viewed: 2013-09-20
-    imdb_id: tt2375574
-    country: UK
+  viewed: 2013-09-20
+  imdb_id: tt2375574
+  country: UK
 
 - title: Rigor Mortis
-    viewed: 2013-09-20
-    imdb_id: tt2771800
-    country: Hong Kong
+  viewed: 2013-09-20
+  imdb_id: tt2771800
+  country: Hong Kong
 
 - title: Vic+Flo Saw a Bear
-    viewed: 2013-09-21
-    imdb_id: tt2385882
-    country: Canada
-    language: French
+  viewed: 2013-09-21
+  imdb_id: tt2385882
+  country: Canada
+  language: French
 
 - title: Borgman
-    viewed: 2013-09-21
-    imdb_id: tt1954315
-    country: Netherlands
-    language: Dutch
+  viewed: 2013-09-21
+  imdb_id: tt1954315
+  country: Netherlands
+  language: Dutch
 
 - title: LFO
-    viewed: 2013-09-21
-    imdb_id: tt2660332
-    country:
-        - Sweden
-        - Denmark
-    language: Swedish
+  viewed: 2013-09-21
+  imdb_id: tt2660332
+  country:
+    - Sweden
+    - Denmark
+  language: Swedish
 
 - title: Patrick
-    viewed: 2013-09-22
-    imdb_id: tt2147459
-    country: Australia
-    language: English
+  viewed: 2013-09-22
+  imdb_id: tt2147459
+  country: Australia
+  language: English
 
 - title: Blue Ruin
-    viewed: 2013-09-22
-    country: USA
-    language: English
+  viewed: 2013-09-22
+  country: USA
+  language: English
 
-- title: The Strange Colour of Your Body’s Tears
-    viewed: 2013-09-22
-    country:
-        - Belgium
-        - France
-        - Luxembourg
-    language: French
+- title: The Strange Colour of Your Body's Tears
+  viewed: 2013-09-22
+  country:
+    - Belgium
+    - France
+    - Luxembourg
+  language: French
 
 - title: Gatchaman
-    viewed: 2013-09-22
-    country: Japan
-    language: Japanese
+  viewed: 2013-09-22
+  country: Japan
+  language: Japanese
 
 - title: Witching and Bitching
-    viewed: 2013-09-23
-    imdb_id: tt2404738
-    country: Spain
+  viewed: 2013-09-23
+  imdb_id: tt2404738
+  country: Spain
 
 - title: The Resurrection of a Bastard
-    viewed: 2013-09-23
-    imdb_id: tt2317102
-    country: Netherlands
-    language: Dutch
+  viewed: 2013-09-23
+  imdb_id: tt2317102
+  country: Netherlands
+  language: Dutch
 
 - title: The Sacrament
-    viewed: 2013-09-23
-    country: USA
+  viewed: 2013-09-23
+  country: USA
 
 - title: Narco Cultura
-    viewed: 2013-09-24
-    country: Mexico
+  viewed: 2013-09-24
+  country: Mexico
 
 - title: Fantastic Shorts
-    viewed: 2013-09-25
+  viewed: 2013-09-25
 
 - title: Our Heroes Died Tonight
-    viewed: 2013-09-25
-    country: France
+  viewed: 2013-09-25
+  country: France
 
 - title: Mood Indigo
 
