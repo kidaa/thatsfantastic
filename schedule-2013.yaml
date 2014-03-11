@@ -2,45 +2,45 @@
 
 
 - title: Coherence
-  viewed: 2013-09-19
+  viewed: 2013-09-19T18:30-05:00
   country: USA
 
 - title: Northwest
-  viewed: 2013-09-19
+  viewed: 2013-09-19T21:20-05:00
   country: Denmark
 
 - title: Almost Human
-  viewed: 2013-09-19
+  viewed: 2013-09-19T23:45-05:00
   country: USA
 
 - title: Escape From Tomorrow
-  viewed: 2013-09-20
+  viewed: 2013-09-20T11:30-05:00
   country: USA
 
 - title: A Field In England
-  viewed: 2013-09-20
+  viewed: 2013-09-20T18:00-05:00
   imdb_id: tt2375574
   country: UK
 
 - title: Rigor Mortis
-  viewed: 2013-09-20
+  viewed: 2013-09-20T21:00-05:00
   imdb_id: tt2771800
   country: Hong Kong
 
 - title: Vic+Flo Saw a Bear
-  viewed: 2013-09-21
+  viewed: 2013-09-21T11:15-05:00
   imdb_id: tt2385882
   country: Canada
   language: French
 
 - title: Borgman
-  viewed: 2013-09-21
+  viewed: 2013-09-21T14:45-05:00
   imdb_id: tt1954315
   country: Netherlands
   language: Dutch
 
 - title: LFO
-  viewed: 2013-09-21
+  viewed: 2013-09-21T17:45-05:00
   imdb_id: tt2660332
   country:
     - Sweden
@@ -48,18 +48,22 @@
   language: Swedish
 
 - title: Patrick
-  viewed: 2013-09-22
+  viewed: 2013-09-22T10:35-05:00
   imdb_id: tt2147459
   country: Australia
   language: English
 
+- title: Nothing Bad Can Happen
+  viewed: 2013-09-22T20:45-05:00
+  country: Germany
+
 - title: Blue Ruin
-  viewed: 2013-09-22
+  viewed: 2013-09-22T17:45-05:00
   country: USA
   language: English
 
 - title: The Strange Colour of Your Body's Tears
-  viewed: 2013-09-22
+  viewed: 2013-09-22T114:30-05:00
   country:
     - Belgium
     - France
@@ -67,46 +71,68 @@
   language: French
 
 - title: Gatchaman
-  viewed: 2013-09-22
+  viewed: 2013-09-22T23:55-05:00
   country: Japan
   language: Japanese
 
 - title: Witching and Bitching
-  viewed: 2013-09-23
+  viewed: 2013-09-23T14:00-05:00
   imdb_id: tt2404738
   country: Spain
 
 - title: The Resurrection of a Bastard
-  viewed: 2013-09-23
+  viewed: 2013-09-23T10:45-05:00
   imdb_id: tt2317102
   country: Netherlands
   language: Dutch
 
 - title: The Sacrament
-  viewed: 2013-09-23
+  viewed: 2013-09-23T16:30-05:00
   country: USA
 
 - title: Narco Cultura
-  viewed: 2013-09-24
+  viewed: 2013-09-24T14:30-05:00
+  country: Mexico
+
+- title: Grand Piano
+  viewed: 2013-09-24T17:15-05:00
   country: Mexico
 
 - title: Fantastic Shorts
-  viewed: 2013-09-25
+  viewed: 2013-09-25T13:45-05:00
 
 - title: Our Heroes Died Tonight
-  viewed: 2013-09-25
+  viewed: 2013-09-25T18:00-05:00
   country: France
 
 - title: Mood Indigo
+  viewed: 2013-09-23T20:35-05:00
+  country: France
 
 - title: Detective Downs
+  viewed: 2013-09-20T02:45-05:00
+  imdb_id: tt2565306
+  country: Norway
 
 - title: R100
+  viewed: 2013-09-25T23:00-05:00
+  country: Japan
 
 - title: The Fake
+  viewed: 2013-09-25T20:15-05:00
+  country: S. Korea
 
 - title: Zero Theorem
+  viewed: 2013-09-26T19:30-05:00
+  imdb_id: tt2333804
+  country:
+    - USA
+    - Romania
 
 - title: "Goldberg & Eisenberg"
+  country: Israel
+  viewed: 2013-09-26T16:30-05:00
 
 - title: "Fantastic Feud"
+  viewed: 2013-09-23T23:59-05:00
+  country: Texas
