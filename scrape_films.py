@@ -3,6 +3,7 @@ from urllib.parse import urljoin
 import os
 from requests_futures.sessions import FuturesSession
 import json
+import re
 
 session = FuturesSession(max_workers=10)
 
@@ -15,6 +16,10 @@ DEFAULT_EXCLUDE_CLASSES = set(['shareBox', 'alert', 'carousel', 'carousel-inner'
 
 REQUESTS_PER_MINUTE = 15
 
+META_REGEX = r'(?P<year>\d{4}),\s+DIR\.\s+(?P<directors>[\w\s\.\,]+),\s+(?P<runtime>\d+)\s+MIN\.,\s+(?P<country>[\w\s]+)'
+
+meta_searcher = re.compile(META_REGEX, flags=re.I)
+
 
 def exclude_classes(tag, exclude_set=DEFAULT_EXCLUDE_CLASSES):
     if tag.has_attr('class'):
@@ -24,6 +29,15 @@ def exclude_classes(tag, exclude_set=DEFAULT_EXCLUDE_CLASSES):
         return len(class_intersection) == 0
     else:
         return True
+
+
+def get_meta_info(soup):
+    meta_el = soup.select('header.carousel-caption > h6')[0]
+    meta_text = meta_el.text
+    match = meta_searcher.search(meta_text)
+    if match:
+        return match.groupdict()
+    return None
 
 
 def get_link_set(soup):
@@ -48,10 +62,16 @@ def process_film_page(sess, response):
         soup = BeautifulSoup(response.text)
         film_title = extract_title(soup)
         raw_body = extract_body_text(soup)
+        meta_info = get_meta_info(soup)
         film_info = {
             'title': film_title,
             'raw_body': raw_body
         }
+        if meta_info:
+            film_info['year'] = int(meta_info['year'])
+            film_info['directors'] = [x.title() for x in meta_info.get('directors', '').split(',')]
+            film_info['runtime'] = int(meta_info.get('runtime', None))
+            film_info['country'] = meta_info.get('country', '').title()
         url_end = os.path.split(response.url)[-1]
         filename = "{}.json".format(url_end)
         file_save_path = os.path.join(SAVE_PATH, filename)
@@ -72,8 +92,8 @@ def process_film_list_page(sess, response):
 
 
 # def main():
-#     # page_offsets = range(0, 109, 18)
-#     page_offsets = range(0, 18, 18)
+#     page_offsets = range(0, 109, 18)
+#     # page_offsets = range(0, 18, 18)
 #     page_urls = [urljoin(BASE_URL, "P{0:d}".format(offset)) for offset in page_offsets]
 #     for url in page_urls:
 #         session.get(url, background_callback=process_film_list_page)
