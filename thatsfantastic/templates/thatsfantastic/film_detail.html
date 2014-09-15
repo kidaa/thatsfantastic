@@ -1,10 +1,14 @@
-<!doctype html>
-<html>
-    <head>
-        <title>That's Fantastic</title>
-    </head>
-    <body>
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
         <h2>{{ object.title }}</h2>
+        <section>
+            <h3>Summary</h3>
+            {{ object.summary|linebreaks }}
+        </section>
+        <section>
+            <h3>Description</h3>
         {{ object.long_description|linebreaks }}
-    </body>
-</html>
+        </section>
+    </div>
+{% endblock content %}
