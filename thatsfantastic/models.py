@@ -41,6 +41,7 @@ class Film(models.Model):
     class Meta:
         verbose_name = _('Film')
         verbose_name_plural = _('Films')
+        ordering = ('title',)
 
     def __unicode__(self):
         return '{title} [{year}]'.format(title=self.title, year=self.year)

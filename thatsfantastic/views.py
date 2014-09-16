@@ -12,3 +12,7 @@ class FilmSearchView(ListView):
     def get_queryset(self):
         query = self.request.REQUEST.get("q")
         return self.model.objects.filter(title__icontains=query)
+
+
+class FilmListView(ListView):
+    model = Film
