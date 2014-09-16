@@ -1,14 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="row">
-        <h2>{{ object.title }}</h2>
-        <section>
+        <div class="columns">
+            <h2>{{ object.title }}</h2>
+        </div>
+    </div>
+    <section class="row">
+        <div class="columns">
             <h3>Summary</h3>
             {{ object.summary|linebreaks }}
-        </section>
-        <section>
+        </div>
+    </section>
+    <section class="row">
+        <div class="columns">
             <h3>Description</h3>
-        {{ object.long_description|linebreaks }}
-        </section>
-    </div>
+            {{ object.long_description|linebreaks }}
+        </div>
+    </section>
 {% endblock content %}

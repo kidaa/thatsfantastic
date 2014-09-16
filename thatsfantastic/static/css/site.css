@@ -6,15 +6,28 @@ body, p, h1, h2, h3, h4, h5 {
     color: #bfbfbf;
 }
 
+h2, h3, h4, h5 {
+    color: #a69696;
+}
+
 input, input[type=text] {
     background-color: #54585d;
     border: 1px solid #506480;
 }
 
 button, .button {
+    color: #bfbfbf;
     background-color: #506480;
 }
 
-#searchbar {
-    margin-top: 20px;
+a {
+    color: #2c82a5;
+}
+
+a:hover {
+    color: #59a2c3;
+}
+
+.top-bar input {
+    margin-bottom: 0;
 }
