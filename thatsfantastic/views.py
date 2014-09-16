@@ -1,6 +1,14 @@
-from django.views.generic.detail import DetailView
+from django.views.generic import ListView, DetailView
 from thatsfantastic.models import Film
 
 
 class FilmDetailView(DetailView):
     model = Film
+
+
+class FilmSearchView(ListView):
+    model = Film
+
+    def get_queryset(self):
+        query = self.request.REQUEST.get("q")
+        return self.model.objects.filter(title__icontains=query)

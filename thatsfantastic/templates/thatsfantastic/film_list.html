@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for object in object_list %}
+    <div class="row">
+        <p><a href="{% url 'film-detail' pk=object.pk %}">{{ object.title }}</a></p>
+    </div>
+    {% empty %}
+    <div class="row">
+        <h4>No results</h4>
+    </div>
+    {% endfor %}
+{% endblock content %}

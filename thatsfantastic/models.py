@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext as _
 from djorm_pgarray.fields import TextArrayField
 from django_countries import countries
+from django.core.urlresolvers import reverse
 
 COUNTRY_CODES = tuple(countries)
 
@@ -43,6 +44,9 @@ class Film(models.Model):
 
     def __unicode__(self):
         return '{title} [{year}]'.format(title=self.title, year=self.year)
+
+    def get_absolute_url(self):
+        return reverse('film-detail', kwargs={'pk': str(self.pk)})
 
 
 class Screening(models.Model):

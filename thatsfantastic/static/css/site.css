@@ -1,0 +1,20 @@
+body {
+    background-color: #0f151b;
+}
+
+body, p, h1, h2, h3, h4, h5 {
+    color: #bfbfbf;
+}
+
+input, input[type=text] {
+    background-color: #54585d;
+    border: 1px solid #506480;
+}
+
+button, .button {
+    background-color: #506480;
+}
+
+#searchbar {
+    margin-top: 20px;
+}
