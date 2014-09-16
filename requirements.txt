@@ -2,3 +2,10 @@ requests
 requests-futures
 beautifulsoup4
 lxml
+psycopg2==2.5.4
+Django==1.7
+django-countries==2.1.2
+djorm-pgarray==1.0.4
+dj-database-url==0.3.0
+whitenoise==1.0.3
+gunicorn==19.1.1
