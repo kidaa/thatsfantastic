@@ -1,0 +1,4 @@
+requests
+requests-futures
+beautifulsoup4
+lxml
