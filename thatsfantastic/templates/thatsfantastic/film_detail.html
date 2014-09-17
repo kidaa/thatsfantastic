@@ -3,6 +3,7 @@
     <div class="row">
         <div class="columns">
             <h2>{{ object.title }}</h2>
+            <p>Runtime: {{ object.runtime }} minutes</p>
         </div>
     </div>
     <section class="row">
@@ -11,10 +12,12 @@
             {{ object.summary|linebreaks }}
         </div>
     </section>
+    {% if object.long_description %}
     <section class="row">
         <div class="columns">
             <h3>Description</h3>
             {{ object.long_description|linebreaks }}
         </div>
     </section>
+    {% endif %}
 {% endblock content %}
