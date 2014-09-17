@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-    <ul class="stack button-group">
-    {% for object in object_list %}
-            <li><a href="{{ object.get_absolute_url }}" class="button">{{ object.title }}</a></li>
-    {% empty %}
-    <h4>No films!</h4>
-    {% endfor %}
-    </ul>
+    <div class="columns small-12 medium-8 medium-offset-2">
+        <ul class="stack button-group">
+        {% for object in object_list %}
+                <li><a href="{{ object.get_absolute_url }}" class="button">{{ object.title }}</a></li>
+        {% empty %}
+        <h4>No films!</h4>
+        {% endfor %}
+        </ul>
+    </div>
 </div>
 {% endblock content %}

@@ -29,10 +29,11 @@ button, .button {
     background-color: #2F6187;
 }
 
-.top-bar-section ul li > a.button.alert {
+.top-bar-section ul li > button.button.alert, .top-bar-section ul li > a.button.alert {
     background-color: #8A2522;
 }
 
+.top-bar-section ul li > button.button.alert:hover, .top-bar-section ul li > button.button.alert:focus,
 .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
     background-color: #9E1C19;
 }
