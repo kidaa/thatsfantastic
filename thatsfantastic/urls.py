@@ -6,7 +6,7 @@ from thatsfantastic.views import (FilmDetailView, FilmSearchView, FilmListView)
 DEBUG = getattr(settings, 'DEBUG', False)
 
 urlpatterns = patterns('',
-    url(r'^films/(?P<pk>\d+)/$', FilmDetailView.as_view(), name='film-detail'),
+    url(r'^films/(?P<slug>[\w\-]+)/$', FilmDetailView.as_view(), name='film-detail'),
     url(r'^films/search/$', FilmSearchView.as_view(), name='films-search'),
     url(r'^$', FilmListView.as_view(), name='films-list'),
 

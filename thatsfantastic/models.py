@@ -68,7 +68,7 @@ class Film(models.Model):
         return self.__unicode__()
 
     def get_absolute_url(self):
-        return reverse('film-detail', kwargs={'pk': str(self.pk)})
+        return reverse('film-detail', kwargs={'slug': str(self.slug)})
 
 
 class Screening(models.Model):
