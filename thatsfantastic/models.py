@@ -21,9 +21,17 @@ class Person(models.Model):
         verbose_name_plural = _('People')
 
     def __unicode__(self):
-        return '{first} {middle} {last}'.format(first=self.first_name,
-                                                middle=self.middle_name,
-                                                last=self.last_name)
+        return self.full_name
+
+    def __str__(self):
+        return self.__unicode__()
+
+    @property
+    def full_name(self):
+        middle_str = ' {0}'.format(self.middle_name) if self.middle_name != '' else ''
+        return '{first}{middle} {last}'.format(first=self.first_name,
+                                               middle=middle_str,
+                                               last=self.last_name)
 
 
 class Film(models.Model):
@@ -46,6 +54,9 @@ class Film(models.Model):
     def __unicode__(self):
         return '{title} [{year}]'.format(title=self.title, year=self.year)
 
+    def __str__(self):
+        return self.__unicode__()
+
     def get_absolute_url(self):
         return reverse('film-detail', kwargs={'pk': str(self.pk)})
 
@@ -62,4 +73,8 @@ class Screening(models.Model):
         verbose_name_plural = _('Screenings')
 
     def __unicode__(self):
-        pass
+        '{title}: {start}-{end}'.format(title=self.film.title, start=self.start_time, end=self.end_time)
+
+    def __str__(self):
+        return self.__unicode__()
+
