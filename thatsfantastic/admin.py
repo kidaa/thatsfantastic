@@ -4,7 +4,8 @@ from thatsfantastic.models import (Film, Person, Screening)
 
 @admin.register(Film)
 class FilmAdmin(admin.ModelAdmin):
-    list_display = ('title', 'runtime', 'year')
+    prepopulated_fields = {'slug': ('title',)}
+    list_display = ('title', 'runtime', 'year', 'slug')
     search_fields = ('title', 'long_description')
 
 

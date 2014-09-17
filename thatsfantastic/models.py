@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext as _
+from django.utils.text import slugify
 from djorm_pgarray.fields import TextArrayField
 from django_countries import countries
 from django.core.urlresolvers import reverse
@@ -36,6 +37,7 @@ class Person(models.Model):
 
 class Film(models.Model):
     title = models.CharField(max_length=120)
+    slug = models.SlugField(max_length=140, unique=True, null=True, blank=True)
     summary = models.TextField(blank=True)
     long_description = models.TextField(blank=True)
     country = TextArrayField(choices=COUNTRY_CODES, default=default_list)
@@ -50,6 +52,14 @@ class Film(models.Model):
         verbose_name = _('Film')
         verbose_name_plural = _('Films')
         ordering = ('title',)
+
+    def save(self, *args, **kwargs):
+        if self.slug is None or self.slug == '':
+            title_str = self.title
+            if len(self.title) > 140:
+                title_str = title_str[:140]
+            self.slug = slugify(title_str)
+        super(Film, self).save(*args, **kwargs)
 
     def __unicode__(self):
         return '{title} [{year}]'.format(title=self.title, year=self.year)
