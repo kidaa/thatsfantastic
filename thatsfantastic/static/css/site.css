@@ -1,23 +1,44 @@
 body {
-    background-color: #0f151b;
+    background-color: #222;
+    color: #d5d5d5;
 }
 
-body, p, h1, h2, h3, h4, h5 {
-    color: #bfbfbf;
+body, p, h1, h2, h3, h4, h5, {
+    color: #d5d5d5;
+}
+
+.top-bar .name h1 a, .top-bar .toggle-topbar.menu-icon a {
+    color: #d5d5d5;
 }
 
 h2, h3, h4, h5 {
-    color: #a69696;
+    color: #354d6c;
 }
 
 input, input[type=text] {
     background-color: #54585d;
-    border: 1px solid #506480;
+    border: 1px solid #212F3B;
 }
 
 button, .button {
-    color: #bfbfbf;
-    background-color: #506480;
+    color: #d0d0d0;
+    background-color: #212F3B;
+}
+
+.button:hover, .button:focus {
+    background-color: #2F6187;
+}
+
+.top-bar-section ul li > a.button.alert {
+    background-color: #8A2522;
+}
+
+.top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
+    background-color: #9E1C19;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    color: #d0d0d0;
 }
 
 a {
